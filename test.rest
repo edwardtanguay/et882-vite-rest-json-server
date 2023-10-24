@@ -6,6 +6,20 @@
 ### GET SINGLE JOB
 {{url}}/jobs/2
 
+### CREATE NEW JOB
+POST {{url}}/jobs
+content-type: application/json
+
+{
+	"id": 1,
+	"title": "Frontend Developer TEST",
+	"company": "Company Name TEST",
+	"url": "http://TEST",
+	"description": "test",
+	"skillList": "skills TEST",
+	"publicationDate": "2022-11-17"
+}
+
 ### GET ALL SKILLS
 {{url}}/skills
 
