@@ -17,6 +17,7 @@ export interface ISkill {
 }
 
 export interface IAppData {
+	baseUrl: string,
 	jobs: IJob[],
 	skills: ISkill[]
 }
