@@ -1,0 +1,13 @@
+@url = http://localhost:5995
+
+### GET ALL JOBS
+{{url}}/jobs
+
+### GET SINGLE JOB
+{{url}}/jobs/2
+
+### GET ALL SKILLS
+{{url}}/skills
+
+### GET SINGLE SKILL
+{{url}}/skills/2
