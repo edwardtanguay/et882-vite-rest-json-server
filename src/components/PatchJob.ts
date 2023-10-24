@@ -1,19 +1,19 @@
 import { appData } from "../appContext";
 import { IJob } from "../interface";
 
-export const PutJob = () => {
+export const PatchJob = () => {
 
 	const { baseUrl } = appData;
 
 	setTimeout(() => {
-		const jobIdElem = document.querySelector<HTMLInputElement>('.putJob .jobId');
-		const formElem = document.querySelector<HTMLInputElement>('.putJob form');
-		const displayElem = document.querySelector<HTMLDivElement>('.putJob .display');
+		const jobIdElem = document.querySelector<HTMLInputElement>('.patchJob .jobId');
+		const formElem = document.querySelector<HTMLInputElement>('.patchJob form');
+		const displayElem = document.querySelector<HTMLDivElement>('.patchJob .display');
 
 		if (jobIdElem && formElem && displayElem) {
 			formElem.addEventListener('submit', async (e) => {
 				e.preventDefault();
-				const titleElem = document.querySelector<HTMLInputElement>('.putJob .title');
+				const titleElem = document.querySelector<HTMLInputElement>('.patchJob .title');
 				if (titleElem) {
 					const changeFields = {
 						title: titleElem.value
@@ -38,6 +38,10 @@ export const PutJob = () => {
 							<div>${job.skillList}</div>	
 						</div>
 					`
+					} else {
+						displayElem.innerHTML = `
+						<div class="error">Job with ID ${jobId} does not exist.</div>
+					`
 					}
 				}
 			})
@@ -47,17 +51,14 @@ export const PutJob = () => {
 
 	return /*html*/ `
 		<style>
-			.putJob .jobId {
+			.patchJob .jobId {
 				width: 2rem;
 				margin-right: .3rem;
 				text-align: right;
 			}
-			.putJob .job {
-				margin-top: 1rem;
-			}
 		</style>
-	 	<fieldset class="component putJob">
-			<legend>Get Job</legend>
+	 	<fieldset class="component patchJob">
+			<legend>Patch Job</legend>
 			<form>
 				<div>Job ID: <input class="jobId" value="0"/></div>
 				<div>Title: <input class="title"/><button>Search</button></div>
