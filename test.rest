@@ -38,7 +38,7 @@ PATCH {{url}}/jobs/2
 content-type: application/json
 
 {
-	"title": "222 TEST",
+	"title": "222 TEST"
 }
 
 ### GET ALL SKILLS
