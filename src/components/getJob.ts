@@ -33,7 +33,6 @@ export const GetJob = () => {
 		<style>
 			.getJob .jobId {
 				width: 2rem;
-				margin-right: .3rem;
 				text-align: right;
 			}
 			.getJob .job {

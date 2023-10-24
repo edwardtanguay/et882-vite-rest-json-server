@@ -1,6 +1,7 @@
 import './style.scss'
 import { appData } from './appContext';
-import { GetJob } from './components/getJob';
+import { GetJob } from './components/GetJob';
+import { PutJob } from './components/PutJob';
 
 const { jobs, skills } = appData;
 
@@ -9,5 +10,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<p>There are ${jobs.length} jobs.</p>
 	<p>There are ${skills.length} skills.</p>
 	${GetJob()}
+	${PutJob()}
 `
 

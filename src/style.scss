@@ -12,9 +12,20 @@ body {
 		background-color: rgb(35, 58, 35);
 		padding: 1rem;
 		border-radius: .5rem;
-		border: 1px solid  rgb(189, 189, 56);
+		margin-top: 1rem;
+		border: 1px solid rgb(189, 189, 56);
+
 		legend {
 			color: yellow;
+		}
+
+		form {
+			div {
+				margin-top: .5rem;
+			}
+			input {
+				margin-right: .3rem;
+			}
 		}
 	}
 }
