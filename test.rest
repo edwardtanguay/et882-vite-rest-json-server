@@ -33,6 +33,14 @@ content-type: application/json
 	"publicationDate": "2022-11-17"
 }
 
+### CHANGE ONE PROPERTY ON A JOB
+PATCH {{url}}/jobs/2
+content-type: application/json
+
+{
+	"title": "222 TEST",
+}
+
 ### GET ALL SKILLS
 {{url}}/skills
 
