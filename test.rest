@@ -50,3 +50,14 @@ content-type: application/json
 
 ### GET SINGLE SKILL
 {{url}}/skills/2
+
+### CREATE NEW SKILL
+POST {{url}}/skills
+content-type: application/json
+
+{
+	"idCode": "testskill",
+	"name": "TEST SKILL",
+	"url": "https://testskill",
+	"description": "description test"
+}
