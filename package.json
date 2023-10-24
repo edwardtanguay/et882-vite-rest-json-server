@@ -4,15 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "run-p api frontend",
+    "api": "json-server --watch ./backend/data/db.json --port 5995",
+    "frontend": "vite --port 5990",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "json-server": "^0.17.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.69.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  },
-  "dependencies": {
-    "sass": "^1.69.4"
   }
 }
