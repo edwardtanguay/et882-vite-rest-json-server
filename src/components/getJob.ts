@@ -1,14 +1,14 @@
 import { appData } from "../appContext";
 import { IJob } from "../interface";
 
-export const SearchJob = () => {
+export const GetJob = () => {
 
 	const { baseUrl } = appData;
 
 	setTimeout(() => {
-		const jobIdElem = document.querySelector<HTMLInputElement>('.searchJob .jobId');
-		const buttonElem = document.querySelector<HTMLInputElement>('.searchJob button');
-		const displayElem = document.querySelector<HTMLDivElement>('.searchJob .display');
+		const jobIdElem = document.querySelector<HTMLInputElement>('.getJob .jobId');
+		const buttonElem = document.querySelector<HTMLInputElement>('.getJob button');
+		const displayElem = document.querySelector<HTMLDivElement>('.getJob .display');
 		
 		if (jobIdElem && buttonElem && displayElem) {
 			buttonElem.addEventListener('click', async (e) => {
@@ -31,17 +31,17 @@ export const SearchJob = () => {
 
 	return /*html*/ `
 		<style>
-			.searchJob .jobId {
+			.getJob .jobId {
 				width: 2rem;
 				margin-right: .3rem;
 				text-align: right;
 			}
-			.searchJob .job {
+			.getJob .job {
 				margin-top: 1rem;
 			}
 		</style>
-	 	<fieldset class="component searchJob">
-			<legend>Search for individual job</legend>
+	 	<fieldset class="component getJob">
+			<legend>Get Job</legend>
 			<form>
 			Job ID: <input class="jobId" value="0"/><button>Search</button>	
 			</form>
