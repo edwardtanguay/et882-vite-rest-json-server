@@ -20,7 +20,7 @@ content-type: application/json
 }
 
 ### REPLACE A JOB
-PUT {{url}}/jobs
+PUT {{url}}/jobs/1
 content-type: application/json
 
 {
