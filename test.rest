@@ -19,6 +19,20 @@ content-type: application/json
 	"publicationDate": "2022-11-17"
 }
 
+### REPLACE A JOB
+PUT {{url}}/jobs
+content-type: application/json
+
+{
+	"id": 1,
+	"title": "111 TEST",
+	"company": "Company Name TEST",
+	"url": "http://TEST",
+	"description": "test",
+	"skillList": "skills TEST",
+	"publicationDate": "2022-11-17"
+}
+
 ### GET ALL SKILLS
 {{url}}/skills
 
