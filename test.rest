@@ -61,3 +61,14 @@ content-type: application/json
 	"url": "https://testskill",
 	"description": "description test"
 }
+
+### REPLACE A SKILL
+PUT {{url}}/skills/1
+content-type: application/json
+
+{
+	"idCode": "TEST REPLACE SKILL",
+	"name": "TEST REPLACE SKILL",
+	"url": "https://testskill",
+	"description": "description test"
+}
