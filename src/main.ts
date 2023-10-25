@@ -6,6 +6,7 @@ import { PostJob } from './components/PostJob';
 import { PutJob } from './components/PutJob';
 import { DeleteJob } from './components/DeleteJob';
 import { GetSkill } from './components/GetSkill';
+import { PostSkill } from './components/PostSkill';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1>Job Postings</h1>
@@ -17,5 +18,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	${PutJob()}
 	${DeleteJob()}
 	${GetSkill()}
+	${PostSkill()}
 `
 redrawSite();
