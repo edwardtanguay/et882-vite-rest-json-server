@@ -41,4 +41,38 @@ body {
 			}
 		}
 	}
+
+	.skillComponent {
+		background-color: rgb(35, 42, 58);
+		padding: 1rem;
+		border-radius: .5rem;
+		margin-top: 1rem;
+		border: 1px solid rgb(0, 255, 200);
+		width: 30rem;
+
+		legend {
+			color: rgb(0, 255, 200);
+			span {
+				color:rgb(15, 238, 52);
+			}
+		}
+
+		form {
+			div {
+				margin-top: .5rem;
+			}
+
+			input {
+				margin-right: .3rem;
+			}
+		}
+
+		.display {
+			margin-top: 1rem;
+
+			.error {
+				color: tomato;
+			}
+		}
+	}
 }
