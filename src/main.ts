@@ -4,6 +4,7 @@ import { GetJob } from './components/GetJob';
 import { PatchJob } from './components/PatchJob';
 import { PostJob } from './components/PostJob';
 import { PutJob } from './components/PutJob';
+import { DeleteJob } from './components/DeleteJob';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1>Job Postings</h1>
@@ -13,5 +14,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	${PostJob()}
 	${PatchJob()}
 	${PutJob()}
+	${DeleteJob()}
 `
 redrawSite();
