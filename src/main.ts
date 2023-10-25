@@ -16,7 +16,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	${PatchJob()}
 	${PutJob()}
 	${DeleteJob()}
-	<hr>
 	${GetSkill()}
 `
 redrawSite();

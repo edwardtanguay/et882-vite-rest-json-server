@@ -1,5 +1,6 @@
 import { appData } from "../appContext";
 import { ISkill } from "../interface";
+import axios from 'axios';
 
 export const GetSkill = () => {
 
@@ -14,8 +15,8 @@ export const GetSkill = () => {
 			buttonElem.addEventListener('click', async (e) => {
 				e.preventDefault();
 				const skillId = skillIdElem.value;
-				const response = await fetch(`${baseUrl}/skills/${skillId}`);
-				const skill: ISkill = await response.json();
+				const response = await axios.get(`${baseUrl}/skills/${skillId}`);
+				const skill: ISkill = await response.data;
 				if (response.status === 200) {
 					displayElem.innerHTML = `
 						<div class="skill">
