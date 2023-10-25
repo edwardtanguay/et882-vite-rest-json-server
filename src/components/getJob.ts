@@ -9,13 +9,13 @@ export const GetJob = () => {
 		const jobIdElem = document.querySelector<HTMLInputElement>('.getJob .jobId');
 		const buttonElem = document.querySelector<HTMLInputElement>('.getJob button');
 		const displayElem = document.querySelector<HTMLDivElement>('.getJob .display');
-		
+
 		if (jobIdElem && buttonElem && displayElem) {
 			buttonElem.addEventListener('click', async (e) => {
 				e.preventDefault();
 				const jobId = jobIdElem.value;
 				const response = await fetch(`${baseUrl}/jobs/${jobId}`);
-				const job:IJob = await response.json();
+				const job: IJob = await response.json();
 				if (response.status === 200) {
 					displayElem.innerHTML = `
 						<div class="job">
@@ -23,10 +23,13 @@ export const GetJob = () => {
 							<div>${job.skillList}</div>	
 						</div>
 					`
+				} else {
+					displayElem.innerHTML = `
+						<div class="error">Job not found.</div>
+					`
 				}
 			})
 		}
-
 	})
 
 	return /*html*/ `
