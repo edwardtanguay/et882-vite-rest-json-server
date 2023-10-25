@@ -61,7 +61,7 @@ export const PatchJob = () => {
 			<legend>Patch Job</legend>
 			<form>
 				<div>Job ID: <input class="jobId" value="0"/></div>
-				<div>Title: <input class="title"/><button>Search</button></div>
+				<div>Title: <input class="title"/><button>Change</button></div>
 			</form>
 			<div class="display"></div>
 		</fieldset>
