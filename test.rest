@@ -43,7 +43,6 @@ content-type: application/json
 
 ### DELETE A JOB
 DELETE {{url}}/jobs/1
-content-type: application/json
 
 ### GET ALL SKILLS
 {{url}}/skills
