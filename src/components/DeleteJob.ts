@@ -1,5 +1,4 @@
 import { appData } from "../appContext";
-import { IJob } from "../interface";
 
 export const DeleteJob = () => {
 
@@ -24,13 +23,9 @@ export const DeleteJob = () => {
 						}
 					});
 
-				const job: IJob = await response.json();
 				if (response.status === 200) {
 					displayElem.innerHTML = `
-						<div class="job">
-							<div>${job.title} (${job.company})</div>	
-							<div>${job.skillList}</div>	
-						</div>
+						<div>Job with ID ${jobId} was deleted.</div>
 					`
 				} else {
 					displayElem.innerHTML = `
