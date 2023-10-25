@@ -75,7 +75,7 @@ export const PutJob = () => {
 			}
 		</style>
 	 	<fieldset class="component putJob">
-			<legend>Put Job</legend>
+			<legend>Put Job <span>(with fetch)</span></legend>
 			<form>
 				<div>Title: <input class="title" name="title"/></div>
 				<div>Company: <input class="company" name="company"/></div>

@@ -59,7 +59,7 @@ export const PostJob = () => {
 			}
 		</style>
 	 	<fieldset class="component postJob">
-			<legend>Post Job</legend>
+			<legend>Post Job <span>(with fetch)</span></legend>
 			<form>
 				<div>Title: <input class="title" name="title"/></div>
 				<div>Company: <input class="company" name="company"/></div>

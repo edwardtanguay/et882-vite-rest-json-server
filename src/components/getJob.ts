@@ -43,7 +43,7 @@ export const GetJob = () => {
 			}
 		</style>
 	 	<fieldset class="component getJob">
-			<legend>Get Job</legend>
+			<legend>Get Job <span>(with fetch)</span></legend>
 			<form>
 			Job ID: <input class="jobId" value="0"/><button>Search</button>	
 			</form>
