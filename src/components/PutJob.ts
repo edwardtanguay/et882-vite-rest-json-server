@@ -9,13 +9,21 @@ export const PutJob = () => {
 		const displayElem = document.querySelector<HTMLDivElement>('.putJob .display');
 		const titleElem = document.querySelector<HTMLInputElement>('.putJob .title');
 		const companyElem = document.querySelector<HTMLInputElement>('.putJob .company');
+		const urlElem = document.querySelector<HTMLInputElement>('.putJob .url');
+		const descriptionElem = document.querySelector<HTMLInputElement>('.putJob .description');
+		const skillListElem = document.querySelector<HTMLInputElement>('.putJob .skillList');
+		const publicationDateElem = document.querySelector<HTMLInputElement>('.putJob .publicationDate');
 
 		const job = jobs[0];
 
-		if (formElem && displayElem && titleElem && companyElem) {
+		if (formElem && displayElem && titleElem && companyElem && urlElem && descriptionElem && skillListElem && publicationDateElem) {
 
 			titleElem.value = job.title;
 			companyElem.value = job.company;
+			urlElem.value = job.url;
+			descriptionElem.value = job.description;
+			skillListElem.value = job.skillList;
+			publicationDateElem.value = job.publicationDate;
 			
 			formElem.addEventListener('submit', async (e) => {
 				e.preventDefault();
