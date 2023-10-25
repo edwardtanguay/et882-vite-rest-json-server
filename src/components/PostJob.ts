@@ -1,4 +1,4 @@
-import { appData } from "../appContext";
+import { appData, redrawSite } from "../appContext";
 
 export const PostJob = () => {
 
@@ -35,7 +35,8 @@ export const PostJob = () => {
 						<div class="job">
 							<div>Job with ID ${newJob.id} was created.</div>	
 						</div>
-					`
+					`;
+					redrawSite();
 				} else {
 					displayElem.innerHTML = `
 						<div class="error">Job could not be created.</div>
