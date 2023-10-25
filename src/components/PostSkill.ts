@@ -58,7 +58,7 @@ export const PostSkill = () => {
 			}
 		</style>
 	 	<fieldset class="skillComponent postSkill">
-			<legend>Post Skill <span>(with fetch)</span></legend>
+			<legend>Post Skill <span>(with axios)</span></legend>
 			<form>
 				<div>ID-Code: <input class="idCode" name="idCode"/></div>
 				<div>Name: <input class="name" name="name"/></div>
